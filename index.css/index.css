@@ -1,0 +1,135 @@
+/* Основні стилі для заголовка */
+.site-header {
+    background-color: #ffffff; /* або інший колір фону */
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1; /* тонка лінія під заголовком */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px; /* або бажана висота логотипу */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #e6d7d7; /* або інший колір тексту */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #007bff; /* колір при наведенні */
+}
+
+.cta-button a {
+    background-color: #1cd1bc; /* колір кнопки */
+    color: #ffffff; /* колір тексту кнопки */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button a:hover {
+    background-color: #0056b3; /* темніший відтінок при наведенні */
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        margin-top: 10px;
+    }
+}
+.features-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 90%;
+    }
+}
